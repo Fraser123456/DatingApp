@@ -10,31 +10,28 @@
             "request": "attach",
             "processId": "${command:pickProcess}"
         },
-        // {
-        //     "name": ".NET Core Launch (web)",
-        //     "type": "coreclr",
-        //     "request": "launch",
-        //     "preLaunchTask": "build",
-        //     "program": "${workspaceFolder}/DatingApp.API/bin/Debug/netcoreapp2.2/DatingApp.API.dll",
-        //     "args": [],
-        //     "cwd": "${workspaceFolder}/DatingApp.API",
-        //     "stopAtEntry": false,
-        //     "serverReadyAction": {
-        //         "action": "openExternally",
-        //         "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
-        //     },
-        //     "env": {
-        //         "ASPNETCORE_ENVIRONMENT": "Development"
-        //     },
-        //     "sourceFileMap": {
-        //         "/Views": "${workspaceFolder}/Views"
-        //     }
-        // },
+    
+        
         {
-            "name": ".NET Core Attach",
+            "name": ".NET Core Launch (web)",
             "type": "coreclr",
-            "request": "attach",
-            "processId": "${command:pickProcess}"
-        }
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/DatingApp.API/bin/Debug/netcoreapp2.2/DatingApp.API.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DatingApp.API",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        
     ]
 }
