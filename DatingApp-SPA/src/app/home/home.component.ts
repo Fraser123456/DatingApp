@@ -15,13 +15,17 @@ export class HomeComponent implements OnInit {
     
   }
 
-  registerToggle(){
+  registerToggle() {
     this.registerMode = true;
   }
 
   
 
   cancelRegisterMode(registerMode: boolean) {
+    this.registerMode = registerMode;
+  }
+
+  registeredMode(registerMode: boolean) {
     this.registerMode = registerMode;
   }
 
