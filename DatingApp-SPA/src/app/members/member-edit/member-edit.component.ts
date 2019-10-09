@@ -13,8 +13,8 @@ export class MemberEditComponent implements OnInit {
   @ViewChild('editForm', {static: true}) editForm: NgForm;
   @HostListener('window:beforeunload', ['$event'])
   user: User;
-  unloadNotification($event: any){
-    if(this.editForm.dirty){
+  unloadNotification($event: any) {
+    if (this.editForm.dirty) {
       $event.returnValue = true;
     }
   }
