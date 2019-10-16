@@ -30,6 +30,7 @@ export class MemberEditComponent implements OnInit {
     this.route.data.subscribe(data => {
       this.user = data['user'];
     });
+    console.log(this.user);
   }
 
   updateUser() {
