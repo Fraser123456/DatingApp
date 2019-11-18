@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { JwtModule } from '@auth0/angular-jwt';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -56,6 +57,7 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       MessagesComponent,
       MemberEditComponent,
       PhotoEditorComponent,
+      TimeAgoPipe,
    ],
    imports: [
       BrowserModule,
